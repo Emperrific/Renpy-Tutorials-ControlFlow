@@ -29,7 +29,7 @@ label start:
     call prologue
 
     menu:
-        "Where would you like to go?"
+        "Where do you like to go?"
 
         "To the beach":
             $beach = True
@@ -48,17 +48,17 @@ label start:
         "What was your favorite thing you did?"
 
         "Swimming" if beach:
-            e "You had a nice long swim in the ocean."
+            e "You had a nice long swim."
 
         "Walking":
             e "You took a relaxing walk."
 
         "Talking with friends":
-            e "You had a good time hanging out with your friends."
+            e "You had fun hanging out with friends."
 
 
 label home:
-    e "As soon as you got home, you immediately went to sleep."
+    e "When you get home, you immediately go to sleep."
     if beach:
         e "You still have sand in your shoes."
     # This ends the game.
